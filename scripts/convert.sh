@@ -349,13 +349,17 @@ convert_codex() {
   mkdir -p "$OUT_DIR/codex/agents"
 
   # Codex CLI agent 格式：TOML 文件
-  # 需要转义 body 中的三引号（极罕见但防御性处理）
+  # TOML 多行基本字符串（"""..."""）中反斜杠必须转义为 \\
+  # 同时转义三引号（极罕见但防御性处理）
   local escaped_body
-  escaped_body="$(echo "$body" | sed 's/"""/\\"""/' )"
+  escaped_body="$(echo "$body" | sed -e 's/\\/\\\\/g' -e 's/"""/\\"""/')"
+
+  local escaped_desc
+  escaped_desc="$(echo "$description" | sed -e 's/\\/\\\\/g' -e 's/"/\\"/g')"
 
   cat > "$outfile" <<HEREDOC
 name = "${slug}"
-description = "${description}"
+description = "${escaped_desc}"
 developer_instructions = """
 ${escaped_body}
 """

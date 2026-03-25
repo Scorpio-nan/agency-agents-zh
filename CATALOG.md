@@ -260,7 +260,6 @@
 | 基础设施运维师 | `support/support-infrastructure-maintainer.md` |
 | 法务合规员 | `support/support-legal-compliance-checker.md` |
 | 招聘运营专家 | `support/support-recruitment-specialist.md` |
-| 供应链采购策略师 | `support/support-supply-chain-strategist.md` |
 | 客服响应者 | `support/support-support-responder.md` |
 
 ## 🧪 测试部 (9)

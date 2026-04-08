@@ -335,24 +335,26 @@ function Run-Conversions {
     foreach ($dir in $AgentDirs) {
         $dirPath = Join-Path $RepoRoot $dir
         if (-not (Test-Path $dirPath)) { continue }
-        Get-ChildItem -Path $dirPath -Filter "*.md" -Recurse | ForEach-Object {
-            $lines = Get-Content -Path $_.FullName -Encoding UTF8
-            if ($lines.Count -eq 0 -or $lines[0] -ne "---") { return }
+        $files = Get-ChildItem -Path $dirPath -Filter "*.md" -Recurse
+        foreach ($file in $files) {
+            $filePath = $file.FullName
+            $lines = Get-Content -Path $filePath -Encoding UTF8
+            if ($lines.Count -eq 0 -or $lines[0] -ne "---") { continue }
             $name = Get-Field "name" $lines
-            if (-not $name) { return }
+            if (-not $name) { continue }
             switch ($ToolName) {
-                "antigravity" { Convert-Antigravity $_.FullName $lines }
-                "gemini-cli"  { Convert-GeminiCli  $_.FullName $lines }
-                "opencode"    { Convert-OpenCode    $_.FullName $lines }
-                "cursor"      { Convert-Cursor      $_.FullName $lines }
-                "trae"        { Convert-Trae        $_.FullName $lines }
-                "openclaw"    { Convert-OpenClaw    $_.FullName $lines }
-                "qwen"        { Convert-Qwen        $_.FullName $lines }
-                "codex"       { Convert-Codex       $_.FullName $lines }
-                "deerflow"    { Convert-DeerFlow    $_.FullName $lines }
-                "kiro"        { Convert-Kiro        $_.FullName $lines }
-                "aider"       { Accumulate-Aider    $_.FullName $lines }
-                "windsurf"    { Accumulate-Windsurf $_.FullName $lines }
+                "antigravity" { Convert-Antigravity $filePath $lines }
+                "gemini-cli"  { Convert-GeminiCli  $filePath $lines }
+                "opencode"    { Convert-OpenCode    $filePath $lines }
+                "cursor"      { Convert-Cursor      $filePath $lines }
+                "trae"        { Convert-Trae        $filePath $lines }
+                "openclaw"    { Convert-OpenClaw    $filePath $lines }
+                "qwen"        { Convert-Qwen        $filePath $lines }
+                "codex"       { Convert-Codex       $filePath $lines }
+                "deerflow"    { Convert-DeerFlow    $filePath $lines }
+                "kiro"        { Convert-Kiro        $filePath $lines }
+                "aider"       { Accumulate-Aider    $filePath $lines }
+                "windsurf"    { Accumulate-Windsurf $filePath $lines }
             }
             $count++
         }

@@ -30,7 +30,7 @@
 
 🎁 **點擊[此連結](https://apinebula.com/V6ekjG)註冊並在充值時填寫「agent」優惠碼，即可享九折優惠！**
 
-<hr width="60%" align="center">
+<hr>
 
 <table>
 <tr>

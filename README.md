@@ -86,12 +86,12 @@
 <tr>
 <td width="25%">
   <a href="https://www.ccsub.net/register?ref=8G5W4JK4">
-    <img src="assets/sponsor-ccsub.jpeg" alt="CCSub — 稳定、实惠的 AI API 中转平台，一个 Key 覆盖 Claude / GPT / Gemini / DeepSeek 全系列模型，价格约为官方直连的 1/3" width="100%">
+    <img src="assets/sponsor-ccsub.jpeg" alt="CCSub — 稳定、实惠的 AI API 中转平台，一个 Key 覆盖 Claude / GPT / Gemini 全系列模型，价格约为官方直连的 1/3" width="100%">
   </a>
 </td>
 <td width="75%" valign="middle">
 
-感谢 [CCSub](https://www.ccsub.net/register?ref=8G5W4JK4) 赞助本项目！CCSub 是稳定、实惠的 AI API 中转平台，是 Claude Code 官方订阅的超强平替。一个 API Key 即可调用 Claude Opus 4.8、Sonnet 4.6、Haiku 4.5、GPT-5、Gemini、DeepSeek 全系列模型，价格约为官方直连的 1/3，全球直连无需梯子。兼容 Claude Code、Codex、Cursor、Cline、Continue、Windsurf 等所有主流 AI 编程工具。🎁 **前往 [www.ccsub.net](https://www.ccsub.net/register?ref=8G5W4JK4) 注册即送 $5 体验额度！**
+感谢 [CCSub](https://www.ccsub.net/register?ref=8G5W4JK4) 赞助本项目！CCSub 是稳定、实惠的 AI API 中转平台，是 Claude Code 官方订阅的超强平替。一个 API Key 即可调用 Claude Opus 4.8、Sonnet 4.6、Haiku 4.5、GPT-5、Gemini 全系列模型，价格约为官方直连的 1/3，全球直连无需梯子。兼容 Claude Code、Codex、Cursor、Cline、Continue、Windsurf 等所有主流 AI 编程工具。🎁 **前往 [www.ccsub.net](https://www.ccsub.net/register?ref=8G5W4JK4) 注册即送 $5 体验额度！**
 
 </td>
 </tr>

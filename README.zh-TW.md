@@ -83,7 +83,7 @@
 </td>
 <td width="75%" valign="middle">
 
-感謝 [Cubence](https://cubence.com/signup?code=SCW29JP9&source=agency) 對本專案的支持。Cubence 是一家致力為客戶提供穩定、高效的 API 中轉服務商。從 25 年 9 月營運至今，提供了 Claude Code、Codex、Gemini 等多種模型支持。🎁 **專屬優惠碼 `AGENCY`：首次購買享 9 折優惠！**
+感謝 [Cubence](https://cubence.com/signup?code=SCW29JP9&source=agency) 對本專案的支持。Cubence 是一家致力為客戶提供穩定、高效的 API 中轉服務商。從 25 年 9 月營運至今，提供了 Claude Code、Codex、Gemini 等多種模型支持。Cubence 為本開源專案多用戶提供了特別的專屬優惠 `AGENCY`，在首次購買時享受 9 折優惠！
 
 </td>
 </tr>
